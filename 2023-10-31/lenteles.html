@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentelės</title>
+    <style>
+        table {
+            /* 
+            Viršus:
+            border-top
+            Kairė:
+            border-left
+            Dešinė:
+            border-right
+            Apačia:
+            border-bottom 
+            */
+            /* https://www.w3schools.com/cssref/css_units.php */
+            border: 1px solid black;
+            border-collapse: collapse;
+            /* width nurodo elemento plotį */
+            width: 100%;
+            /* height nurodo eilutės aukštį */
+        }
+
+        th,
+        td {
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        /* table tr:nth-child(1) {
+            height: 100px;
+        }
+
+        table tr:nth-child(2) {
+            height: 150px;
+        }
+    
+        table tr:nth-child(3) {
+            height: 50px;
+        }
+
+        table tr:nth-child(4) {
+            height: 80px;
+        } */
+
+        .row1 {
+            height: 100px;
+        }
+
+        .row2 {
+            height: 150px;
+        }
+
+        .row3 {
+            height: 50px;
+        }
+
+        .row4 {
+            height: 80px;
+        }
+
+        .colorRed {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <!-- Table heading -->
+                <th>Pirmas</th>
+                <th>Antras</th>
+                <th>Trečias</th>
+                <th>Ketvirtas</th>
+                <th>Penktas</th>
+                <th>Šeštas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table row -->
+            <tr class="row1 colorRed">
+                <!-- Table data -->
+                <td rowspan="2">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr class="row2">
+                <!-- Table data -->
+                <td>2</td>
+                <td>3</td>
+                <td colspan="3">4</td>
+            </tr>
+            <tr class="row3">
+                <!-- Table data -->
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr class="row4">
+                <!-- Table data -->
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
