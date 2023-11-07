@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <style>
+        body {
+            height: 5000px;
+        }
+        .background {
+            height: 360px;
+            
+            background-color: black;
+            /* Fono nuotraukos adresas */
+            background-image: url(top-20-small-dog-breeds.jpeg);
+            /* Fono nuotrauka gali būti ir nuoroda */
+            /* background-image: url(https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=1200&quality=85&auto=format&fit=max&s=a52bbe202f57ac0f5ff7f47166906403); */
+            /* Išjungiamas fono nuotraukos pakartojimas */
+            background-repeat: no-repeat;
+            /* Kartojimas tik į dešinę pusę */
+            /* background-repeat: repeat-x; */
+            /* Kartojimas tik žemyn */
+            /* background-repeat: repeat-y; */
+            /* Originali background-repeat reikšmė: */
+            /* background-repeat: repeat; */
+            /* Fono pozicijos: */
+            /* background-position: 381px 200px; */
+            /* background-position: 50% 50%; */
+            /* background-position: top left; */
+            background-position: center center;
+            /* Fono dydis: */
+            /* background-size: 1500px 500px; */
+            /* background-size: 100%; */
+            /* Viso elemento ploto uždegimas pagal aukščio ir pločio diferencialą */
+            background-size: cover;
+            /* background-size: contain; */
+            /* background-attachment nurodo, jog nuotrauka liks fiksuotoje padėtyje slenkant puslapį žemyn */
+            background-attachment: fixed;
+            background: black url(top-20-small-dog-breeds.jpeg) no-repeat center center / cover fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+</body>
+</html>
