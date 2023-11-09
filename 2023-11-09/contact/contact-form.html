@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        /* Visų elementų pasirinkimas */
+        * {
+            /* Į bendrą plotį neįskaičiuojamos border ir padding reikšmės */
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: url(images/bg.png) no-repeat center center;
+        }
+
+        .contact {
+            position: relative;
+            background-color: white;
+            max-width: 1440px;
+            width: 100%;
+            margin: 100px auto;
+            border-radius: 40px;
+            padding: 30px 50px;
+            overflow: hidden;
+
+            /* Laikina savybė */
+            height: 600px;
+        }
+
+        .contact::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #6DE1C2;
+            height: 100%;
+            width: 419px;
+            /* border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px; */
+        }
+
+        .contact-inner {
+            height: 550px;
+            display: flex;
+            position: relative;
+            z-index: 1;
+        }
+
+        .left {
+            background-color: aquamarine;
+            width: 50%;
+            /* Laikina savybė */
+            height: 100%;
+        }
+
+        .right {
+            background-color:blueviolet;
+            width: 50%;
+            /* Laikina savybė */
+            height: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .contact-inner {
+                flex-direction: column;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <div class="contact-inner">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</body>
+</html>

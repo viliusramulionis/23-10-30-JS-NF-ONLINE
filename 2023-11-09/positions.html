@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            /* margin-bottom: -200px; */
+        }
+
+        .small-box {
+            width: 50px;
+            height: 50px;
+        }
+
+        .purple {
+            background-color: purple;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .relative {
+            position: relative;
+            top: 50px;
+        }
+
+        .absolute {
+            position: absolute;
+            /* Top ir left savybės turi prioritetą prieš right ir bottom */
+            top: 100px;
+            left: 100px;
+            /* right: 100px;
+            bottom: 100px; */
+        }
+
+        .right-bottom {
+            right: 100px;
+            bottom: 100px;
+            top: unset;
+            left: unset;
+        }
+
+        .z-index-1 {
+            z-index: 1;
+        }
+
+        .z-index-2 {
+            z-index: 2;
+        }
+
+        .height-100 {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Pagal nutylėjimą elementai turi priskirtą poziciją static -->
+    <div class="box purple absolute right-bottom"></div>
+    <div class="box green relative">
+        <div class="small-box blue absolute z-index-2"></div>
+        <div class="small-box yellow absolute z-index-1"></div>
+        <div class="height-100 red absolute"></div>
+    </div>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere dolorem porro consectetur perspiciatis. Molestiae libero saepe sit vel, quas aut repellat perspiciatis rerum, ex quaerat tempora ipsum accusantium odit, minus qui consequatur facilis consectetur ducimus. A enim odio, nisi saepe eos ipsa, sit blanditiis officia possimus aperiam amet ut nobis quia eaque adipisci laudantium maiores nihil temporibus! Nam rem quam mollitia corporis, optio eaque quae, aut modi eveniet ipsam repellendus libero, sint tempore dolore itaque maiores fuga amet dicta eos natus nesciunt tempora sit recusandae inventore. Nulla tempora quo totam praesentium ratione optio excepturi eius dolore maiores, unde id ab debitis commodi hic cupiditate nisi veritatis voluptatum consectetur sint molestias facere ipsa impedit! Qui suscipit maxime in aliquid itaque. Reiciendis delectus eaque totam non quam, mollitia, tempore cumque voluptatum veniam repudiandae suscipit accusamus culpa accusantium blanditiis provident adipisci sed repellendus voluptatem ipsam! Illo laudantium, aperiam tempora ut quaerat id, dolores labore commodi officia dolorum incidunt voluptate odio. Quia fugiat minus ut magnam. Quibusdam illum deserunt recusandae molestiae officia vero modi maxime similique, repudiandae eveniet minima iste sed numquam soluta accusamus quo qui nihil ut ea consequatur a, ullam illo? Eveniet sit aliquam dolorem iusto similique repellat, labore a inventore nostrum reprehenderit modi quis, mollitia suscipit id sed error veritatis officiis necessitatibus aut odio consequuntur. Non laudantium iure quas nisi magnam. Quaerat nihil delectus, nostrum cumque nam labore odit repudiandae doloremque incidunt reprehenderit beatae ipsa modi odio veniam eius a mollitia cupiditate quasi maxime expedita nobis ipsum quidem. Dolores esse consequatur, eligendi alias pariatur natus distinctio itaque tempora! Atque ab culpa autem aspernatur aperiam tempora eveniet at dicta laborum ullam soluta dolorum repudiandae, nulla ducimus recusandae. Commodi possimus molestias illum quas voluptas minima! Quaerat aliquid praesentium totam laudantium excepturi, explicabo eos iure facere, aut ipsam quasi mollitia eligendi necessitatibus exercitationem cum. Fuga voluptates vel reiciendis nisi perspiciatis praesentium suscipit corrupti distinctio veritatis consequuntur. Sequi ratione dolorum, facere non commodi id repellat eaque quas? Natus repellendus error voluptate at in voluptatem qui quis vel facere nam modi aperiam reiciendis dolorum, doloribus aspernatur fugit consequuntur molestias tenetur, nemo earum. Laudantium eligendi voluptatem veniam doloribus minima officia ea animi eum, ex quia quaerat dicta aspernatur quas iste. Maiores voluptate doloribus nulla ea quidem ab hic. Ullam beatae nesciunt corporis dolorem quos consequatur minima dicta reprehenderit ducimus, voluptatem nisi laudantium eum vel saepe! Maxime tempore quidem, veniam minima minus quo inventore aperiam enim praesentium perferendis architecto error saepe consectetur repudiandae libero. In voluptas illum sit, sequi vero commodi molestiae ipsum fuga nesciunt, harum, natus eligendi dolores asperiores at accusantium maxime ab delectus dolorum! Sunt aliquam unde praesentium quibusdam dignissimos eos numquam dolor cupiditate debitis consequuntur rerum, consectetur molestias omnis laudantium expedita. Debitis porro culpa quisquam fuga nemo voluptas nihil perspiciatis repudiandae totam? Error id tempore totam commodi labore sapiente hic deleniti natus, explicabo iste suscipit! Expedita perspiciatis reprehenderit temporibus tempore ab modi, dolores, dolor consequuntur praesentium, aut natus optio odio sint sequi et. Veritatis, quo. Libero quo fuga tempora debitis odit mollitia quos quam assumenda.
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border radius</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            margin: 50px auto;
+            background-color: chocolate;
+            /* Kampų užlenkimas iš visų keturių kampų */
+            /* border-radius: 20px; */
+            /* Nurodant kiekvieną kampą individualiai */
+            /* 
+            border-top-left-radius: 20px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 80px; 
+            border-bottom-left-radius: 50px; 
+            */
+            /* Kampų užlenkimai vienoje eilutėje */
+            border-radius: 20px 25px 80px 50px;
+        }
+
+        .circle {
+            width: 500px;
+            height: 500px;
+            margin: 50px auto;
+            background-color: rgb(42, 30, 210);
+            border-radius: 50%;
+        }
+
+        .image {
+            text-align: center;
+            margin: 50px 0;
+            padding: 50px;
+            background-color: violet;
+        }
+
+        .image img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="circle"></div>
+    <div class="image">
+        <img src="icons/jpeg-icon.jpg">
+    </div>
+</body>
+</html>
