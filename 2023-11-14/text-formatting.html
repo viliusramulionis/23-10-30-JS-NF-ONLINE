@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text formatting</title>
+    <style>
+        .letter-spacing {
+            /* Norodome tarpelių plotį tarp kiekvieno simbolio */
+            letter-spacing: 10px;
+            /* letter-spacing: -2px; */
+        }
+
+        .text-indent {
+            /* Pirmos eilutės atitraukimas iš kairės pusės */
+            text-indent: 30px;
+            /* text-indent: -100px; */
+        }
+
+        .white-space {
+            /* white-space reišmė pagal nutylėjimą yra wrap */
+            /* white-space: wrap; */
+            /* Tekstas nekrenta į kitą eilutę pasiekus elemento ribą: */
+            /* white-space: nowrap; */
+        }
+
+        .tab-size {
+            white-space: pre-wrap;
+            /* tab-size: 2; */
+        }
+
+        .text-shadow {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            /* Teksto šešėlio generavimas */
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-transform {
+            /* Tekstas nėra transformuojamas */
+            text-transform: none;
+            /* Didžiosios raidės */
+            text-transform: uppercase;
+            /* Mažosios raidės */
+            text-transform: lowercase;
+            /* Žodžiai iš didžiųjų raidžių */
+            text-transform: capitalize;
+        }
+
+        .word-spacing {
+            word-spacing: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p class="letter-spacing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolore autem recusandae itaque quidem at cupiditate soluta molestias mollitia labore, possimus ullam eligendi similique delectus adipisci amet rem minus doloribus libero, neque excepturi assumenda maiores ratione. Et eaque facere possimus libero commodi ratione a iusto non, adipisci quae odit ducimus!</p>
+    <p class="text-indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, deleniti laudantium. Asperiores officia dolorum autem sed, eum inventore blanditiis explicabo. Quae at natus aut placeat repellendus autem eveniet. Expedita ipsa fuga officiis sint est non ducimus, mollitia nihil dolor iste reprehenderit quasi repellat porro recusandae at architecto minima ea atque id ratione temporibus magnam accusamus. Sunt neque incidunt ab? Nesciunt nobis distinctio repudiandae magnam alias, hic deserunt enim dignissimos! Atque beatae incidunt delectus id ipsum vero laborum temporibus perspiciatis, similique, ex quos accusamus, fugit animi illum cum? Earum omnis eligendi quaerat excepturi odit, ipsam, at maxime reiciendis temporibus architecto vitae.</p>
+    <p class="white-space">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, deleniti laudantium. Asperiores officia dolorum autem sed, eum inventore blanditiis explicabo. Quae at natus aut placeat repellendus autem eveniet. Expedita ipsa fuga officiis sint est non ducimus, mollitia nihil dolor iste reprehenderit quasi repellat porro recusandae at architecto minima ea atque id ratione temporibus magnam accusamus. Sunt neque incidunt ab? Nesciunt nobis distinctio repudiandae magnam alias, hic deserunt enim dignissimos! Atque beatae incidunt delectus id ipsum vero laborum temporibus perspiciatis, similique, ex quos accusamus, fugit animi illum cum? Earum omnis eligendi quaerat excepturi odit, ipsam, at maxime reiciendis temporibus architecto vitae.</p>
+    <p class="tab-size">Lorem ipsum dolor 
+        sit amet, 
+        consectetur 
+        adipisicing elit. 
+        Recusandae, 
+        deleniti laudantium. 
+        Asperiores officia dolorum autem sed, eum inventore blanditiis explicabo. Quae at natus aut placeat repellendus autem eveniet. Expedita ipsa fuga officiis sint est non ducimus, mollitia nihil dolor iste reprehenderit quasi repellat porro recusandae at architecto minima ea atque id ratione temporibus magnam accusamus. Sunt neque incidunt ab? Nesciunt nobis distinctio repudiandae magnam alias, hic deserunt enim dignissimos! Atque beatae incidunt delectus id ipsum vero laborum temporibus perspiciatis, similique, ex quos accusamus, fugit animi illum cum? Earum omnis eligendi quaerat excepturi odit, ipsam, at maxime reiciendis temporibus architecto vitae.</p>
+    <pre>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti rerum totam mollitia placeat animi, dolorum expedita natus sunt, ab iste aperiam, porro labore dolor iusto ipsum molestias quaerat eius.
+        Tekstas
+        Test
+    </pre>
+    <p class="text-shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus deleniti provident, quas numquam culpa nihil accusamus sint nisi eius, vero, illum perferendis sunt blanditiis consequuntur! Cupiditate quas laudantium hic sit rerum illum iusto. Incidunt voluptatum consequuntur nostrum libero delectus dolorum nihil ipsum repellendus, maiores, quod pariatur accusantium nisi sapiente magnam corporis odio doloremque eius alias odit veritatis! Officiis odit, voluptatem quibusdam explicabo enim distinctio vitae. Molestias natus excepturi magni minima eaque nihil! Non perferendis, magnam quas iusto dignissimos reiciendis sed officiis corrupti repellendus nobis, vero sequi reprehenderit porro commodi distinctio similique nulla, tempora alias quaerat. Impedit, quis reprehenderit. Consequuntur, quas.</p>
+    <p class="text-transform">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, accusantium.</p>
+    <p class="word-spacing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestiae quo, cum nobis corporis adipisci animi obcaecati atque rem? Reprehenderit ex iure non quae laborum cum a placeat error maiores inventore. Reprehenderit in quo sunt cumque et, repudiandae sint velit perspiciatis cupiditate nemo, dicta rem? Corporis adipisci porro deserunt libero!</p>
+</body>
+</html>

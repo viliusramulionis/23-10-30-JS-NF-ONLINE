@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(255, 0, 255);
+            /* 1s = 1000ms */
+            /* 0.5s = 500ms */
+            /* .5s = 500ms */
+            /* transition: background-color 2s ease-in-out; */
+            transition: all 1s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+        }
+
+        .box:hover {
+            background-color: lawngreen;
+            width: 500px;
+            height: 500px;
+            top: 50px;  
+            left: 50px;
+            opacity: .2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, repudiandae.
+    </div>
+</body>
+</html>

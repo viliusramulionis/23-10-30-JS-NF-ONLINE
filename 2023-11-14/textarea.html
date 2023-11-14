@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea, outline</title>
+    <style>
+        input[type="text"] {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid rgb(216, 216, 216);
+            padding: 10px;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border: 3px solid red;
+            color: red;
+        }
+
+        textarea {
+            width: 100%;
+            height: 300px;
+            box-sizing: border-box;
+            border: 1px solid rgb(216, 216, 216);
+            padding: 10px;
+
+            /* Norint pašalinti textarea elemento modifikaciją */
+            resize: none;
+            resize: horizontal;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <h3>Textarea</h3>
+    <textarea placeholder="Įveskite žinutės tekstą"></textarea>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci harum vero velit saepe nobis ab voluptates quasi nam itaque dolores! Hic dignissimos quibusdam porro debitis voluptatibus fugit dolorem repudiandae adipisci incidunt excepturi. Cupiditate laboriosam quos laudantium, minima eos debitis quaerat ut, magnam deleniti sequi sunt dolore possimus alias in? Et repellendus est laboriosam consequuntur asperiores tempora ad ullam enim sint recusandae earum beatae eveniet, nobis rerum quod cum molestias aut nostrum, ducimus voluptatem debitis! Autem, ad culpa inventore debitis dolorum voluptate recusandae sint a dignissimos magni, incidunt expedita! Cumque quas possimus magni velit ut voluptatum illo enim cum est tenetur.
+</body>
+</html>

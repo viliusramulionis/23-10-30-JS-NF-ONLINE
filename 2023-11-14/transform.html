@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 60px;
+        }
+
+        .color1 {
+            background-color: indigo;
+        }
+        
+        .color2 {
+            background-color: rgb(54, 130, 0);
+        }
+        
+        .color3 {
+            background-color: rgb(130, 63, 0);
+        }
+
+        .color4 {
+            background-color: rgb(252, 0, 222);
+        }
+
+        .rotate {
+            /* Norint paversti elementą */
+            transform: rotate(45deg);
+        }
+
+        .scale {
+            margin-top: 100px;
+            /* Mastelis */
+            transform: scale(1.2);
+        }
+
+        .skew {
+            margin-top: 100px;
+            transform: skew(-25deg, 50deg);
+        }
+
+        .translate {
+            /* transform: translate(50px, -50px); */
+            position: absolute;
+            /* top: calc(50% - (300px / 2));
+            left: calc(50% - (300px / 2)); */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box color1 rotate">1</div>
+    <div class="box color2 scale">2</div>
+    <div class="box color3 skew">3</div>
+    <div class="box color4 translate">4</div>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid sit in, molestiae nobis reiciendis officia? Ullam deleniti cupiditate autem eligendi, rerum officiis quo repellendus consequatur eaque aperiam libero delectus quas explicabo quisquam. Iure delectus necessitatibus magnam aliquid officiis repudiandae quas, accusamus nesciunt minus provident reiciendis libero cumque optio natus voluptates qui sint debitis velit commodi unde iste! Quod quo, deleniti culpa maiores adipisci hic non officiis facilis natus mollitia qui tempora, a, dolorum alias in! Reprehenderit molestiae libero laborum, quos error, consectetur veritatis voluptas ab iusto saepe quo officiis quam alias itaque est, modi eveniet explicabo quibusdam! Nemo, vitae deserunt?
+</body>
+</html>
