@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive fixed</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: dodgerblue;
+        }
+
+        @media screen and (max-width: 768px) and (min-width: 550px) {
+            .box {
+                background-color: fuchsia;
+            }
+        }
+    </style>
+</head>
+<!-- display: flex -->
+<body> 
+    <!-- display: block -->
+    <div class="box">
+        <!-- display: block -->
+        <div class="line"></div>
+    </div>
+</body>
+</html>

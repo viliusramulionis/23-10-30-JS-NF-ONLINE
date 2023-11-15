@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .box {
+            background-color: rgb(184, 184, 184);
+            color: black;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 22px;
+        }
+
+        .row {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-4 {
+            width: 33.3333333333%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-2 {
+            width: calc(100% / 6);
+        }
+
+        .col-1 {
+            width: calc(100% / 12);
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="box col-12">.full</div>
+    </div>
+    <div class="row">
+        <div class="box col-6">.one-half</div>
+        <div class="box col-6">.one-half</div>
+    </div>
+    <div class="row">
+        <div class="box col-4">.one-third</div>
+        <div class="box col-4">.one-third</div>
+        <div class="box col-4">.one-third</div>
+    </div>
+    <div class="row">
+        <div class="box col-3">.one-fourth</div>
+        <div class="box col-3">.one-fourth</div>
+        <div class="box col-3">.one-fourth</div>
+        <div class="box col-3">.one-fourth</div>
+    </div>
+    <div class="row">
+        <div class="box col-2">.one-sixth</div>
+        <div class="box col-2">.one-sixth</div>
+        <div class="box col-2">.one-sixth</div>
+        <div class="box col-2">.one-sixth</div>
+        <div class="box col-2">.one-sixth</div>
+        <div class="box col-2">.one-sixth</div>
+    </div>
+    <div class="row">
+        <div class="box col-1"></div>
+        <div class="box col-1"></div>
+        <div class="box col-1"></div>
+        <div class="box col-1"></div>
+        <div class="box col-1"></div>
+        <div class="box col-1"></div>
+        <div class="box col-1"></div>
+        <div class="box col-1"></div>
+        <div class="box col-1"></div>
+        <div class="box col-1"></div>
+        <div class="box col-1"></div>
+        <div class="box col-1"></div>
+    </div>
+</body>
+</html>
