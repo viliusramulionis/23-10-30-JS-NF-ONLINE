@@ -53,11 +53,11 @@ nav.navbar li.active a {
     color: #222831;
 }
 
-section.home {
+section.home .decoration {
     position: relative;
 }
 
-section.home::before {
+section.home .decoration::before {
     content: "";
     background: url(../images/deco.png) no-repeat center center;
     width: 65px;
@@ -65,7 +65,7 @@ section.home::before {
     display: block;
     position: absolute;
     bottom: 0;
-    left: 1rem;
+    left: -71px;
 }
 
 .btn {
@@ -213,7 +213,7 @@ section.home::before {
         font-size: 40px;
     }
 
-    section.home::before { 
+    section.home .decoration::before { 
         display: none;
     }
 }   
